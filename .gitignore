@@ -216,3 +216,4 @@ __marimo__/
 .streamlit/secrets.toml
 
 network_pluralism_data/
+notesbooks_temp/
