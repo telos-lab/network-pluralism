@@ -1,8 +1,10 @@
-from scipy.sparse import issparse
-from network_pluralism.access.matrix_files import load_matrix
+from scipy.sparse import issparse, tril
+from network_pluralism.access.utils.files import load_matrix
 from network_pluralism.setup.paths import COMPUTATION_PATH
 import re
 from pathlib import Path
+
+# Retrieving a bipartite network based on resolution levels for each side
 
 
 def find_max_levels(directory=COMPUTATION_PATH):
@@ -74,3 +76,11 @@ def to_level(d, s, binary=False, normalize: str | int = None):
                 incidence_matrix / incidence_matrix.sum(axis=0).A1
             ).tocsr()
     return incidence_matrix, incidence_matrix_rows, incidence_matrix_cols
+
+
+# Get filtered matrix
+
+
+
+# Transforming the graph to either side of the bipartite relation
+
