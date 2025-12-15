@@ -1,3 +1,6 @@
+from network_pluralism.access.utils.ids import get_decision_ids, get_paragraph_ids
+
+
 def get_ego_matrix(statute, s=1, d=3, from_institutions=None):
     if isinstance(from_institutions, str):
         from_institutions = [from_institutions]
