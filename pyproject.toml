@@ -7,7 +7,12 @@ authors = [
     { name = "Titus Puender", email = "titus.puender@icloud.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "python-dotenv>=1.2.1",
+    "quantlaw>=0.0.7",
+    "requests>=2.32.5",
+    "setuptools>=80.9.0",
+]
 
 [project.scripts]
 network-pluralism = "network_pluralism:main"

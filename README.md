@@ -9,7 +9,7 @@ This is the replication package accompanying the following paper:
 
 There are two ways two run this reproducability package.
 - Including `downloading the raw data` and `preprocessing`: This will download the raw data from the original sources. As these provide the data up to date, the results might not correspond with the results presented in the paper.
-- Only `generating results and figures`: Downaload the results as of the paper's download date from this link: [link/to/data]()
+- Only `generating results and figures`: Download the preprocessed data as of the paper's latest download date from this [Donwload Link](https://drive.google.com/file/d/1h8oroadqqXJCLJqnLdEnYOMguHa7cfZ0/view) and place it into the `data`-folder as specific below.
 
 In any case, all data should be stored in a `data`-folder. You can specifiy it's location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the location of this repository.
 
