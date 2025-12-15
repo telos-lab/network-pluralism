@@ -27,6 +27,20 @@ Now, you should be able to run all our code.
 # Structure
 
 - `notebooks`: Data analysis and plotting code
+    - `general`:
+        - `depth.ipynb`: Describing *avaliable* depth in statutes and *exploited* depth in references.
+        - `base_network_description.ipynb`: Describing size and composition of *base network*.
+    - `case_study_1`: Results and figures of the first case study.
+        - `source_and_target.ipynb`: Computing source and target distribution of top 10 referenced sections.
+        - `reference_distributions.ipynb`: Showing and comparing the distributions of outgoing and incoming references across two levels of granularity.
+        - `ranks.ipynb`: Plotting how the ranks react to a modeling and parameter choices.
+        - `general_norms.ipynb`: Showing the overpresentations of nodes at a coarse network model.
+        - `decision_vs_paragraph.ipynb`: Plotting obvervations at two different resolution levels against each other.
+    - `case_study_2`: Results and figures of the first case study.
+        - `source_granularity.ipynb`: Example of strongest neighbors observed at different granularity levels.
+        - `strength_threshold.ipynb`: Introducing and plotting impact of threshold on ranks of strongest neighbors.
+        - `reciprocity.ipynb`: Introducing reciprocity of pairwise relations and plotting bi-dimensional distributions.
+        - `areas_of_law.ipynb`: Example of strongest neighbors observed at in different areas of law.
 - `figures`: Figures used in our paper
 - `scripts`: Scripts resembling the pipeline.
 - `src/network_pluralism`: The package underlying all other parts
