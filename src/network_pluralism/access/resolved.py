@@ -78,9 +78,3 @@ def to_level(d, s, binary=False, normalize: str | int = None):
     return incidence_matrix, incidence_matrix_rows, incidence_matrix_cols
 
 
-# Get filtered matrix
-
-
-
-# Transforming the graph to either side of the bipartite relation
-
