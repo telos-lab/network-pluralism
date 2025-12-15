@@ -30,3 +30,10 @@ for folder in [
     DE_STATUTES_DOWNLOAD_XML,
 ]:
     folder.mkdir(exist_ok=True, parents=True)
+
+PREPROCESSED_DATA = DATA_PATH / "1_preprocessed_data"
+PREPROCESSED_DATA.mkdir(exist_ok=True)
+
+
+COMPUTATION_PATH = DATA_PATH / "2_network_data"
+COMPUTATION_PATH.mkdir(exist_ok=True, parents=True)
