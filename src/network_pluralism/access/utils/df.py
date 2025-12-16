@@ -1,3 +1,4 @@
+from itertools import product
 import pandas as pd
 from network_pluralism.access.resolved import to_level
 from network_pluralism.access.utils.files import load_matrix
@@ -49,3 +50,23 @@ def get_incidence_edge_list(d: int = 3, s: int = 1):
     )
 
     return incidence_df
+
+def get_cooccurrence_edge_list_df(d: int = 3, s: int = 1):
+    incidence_edge_list = get_incidence_edge_list(d, s)
+    cooccurrence_edge_list = []
+
+    target_col = "c_sem_inc"
+
+    for i, values in incidence_edge_list.groupby("r_sem_inc"):
+        referenced_section = values[target_col].to_list()
+        edges = list(product(referenced_section, referenced_section))
+        for e in edges:
+            cooccurrence_edge_list.append(list(e) + [i])
+
+    aggr_df = get_aggregation_edge_list(node_type="j", higher_level=3 - 1)
+    aggr_df.head()
+
+    cooccurrence_edge_list_df = pd.DataFrame(cooccurrence_edge_list, columns=["s1", "s2", "source"]).merge(
+        aggr_df[["r_sem", "c_sem"]], left_on="source", right_on="c_sem"
+    )
+    return cooccurrence_edge_list_df
