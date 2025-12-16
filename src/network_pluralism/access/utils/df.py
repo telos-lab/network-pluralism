@@ -32,8 +32,6 @@ def get_aggregation_edge_list(node_type="j", higher_level=2):
     return sparse_matrix_to_edge_list(aggregation_matrix, am_rows, am_cols)
 
 
-aggregation_df = get_aggregation_edge_list("j")
-
 
 def get_incidence_edge_list(d: int = 3, s: int = 1):
     m, r, c = to_level(d, s)
