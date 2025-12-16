@@ -40,7 +40,7 @@ Now, you should be able to run all our code.
         - `source_granularity.ipynb`: Example of strongest neighbors observed at different granularity levels.
         - `strength_threshold.ipynb`: Introducing and plotting impact of threshold on ranks of strongest neighbors.
         - `reciprocity.ipynb`: Introducing reciprocity of pairwise relations and plotting bi-dimensional distributions.
-        - `areas_of_law.ipynb`: Example of strongest neighbors observed at in different areas of law.
+        - `areas_of_law.ipynb`: Example of strongest neighbors observed from several filtered subsets.
 - `figures`: Figures used in our paper
 - `scripts`: Scripts resembling the pipeline.
 - `src/network_pluralism`: The package underlying all other parts

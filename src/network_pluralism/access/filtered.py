@@ -23,7 +23,6 @@ def get_filtered_matrix(
     r=None,
     c=None,
 ):
-    print("start")
     if m is None:
         m, r, c = to_level(d, s)
     new_col_indices = c
