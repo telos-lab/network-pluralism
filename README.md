@@ -5,7 +5,7 @@ This is the replication package accompanying the following paper:
 > Titus Pünder and Corinna Coupette. *The Power of Network Pluralism: Multi-Perspective Modeling of Heterogeneous Legal Document Networks* 
 > DOI: [10.48550/arXiv.2512.05679](https://doi.org/10.48550/arXiv.2512.05679)
 
-# Setup: Data
+## Setup: Data
 
 There are two ways two run this reproducability package.
 - Including `downloading the raw data` and `preprocessing`: This will download the raw data from the original sources. As these provide the data up to date, the results might not correspond with the results presented in the paper.
@@ -24,12 +24,13 @@ uv sync
 Now, you should be able to run all our code.
 
 
-# Structure
+## Structure
 
 - `notebooks`: Code for data analysis and plotting 
     - `general`:
         - `depth.ipynb`: Describing *avaliable* depth in statutes and *exploited* depth within the observed references.
         - `base_network_description.ipynb`: Describing the size of the *base network* and its composition.
+        - `dynamic_counting.ipynb`: Explore several ways on how (not) to resolve the legislative side in reference networks and analyze their impacts on a standard metric (centrality).
     - `case_study_1`: Results and figures of the first case study:
         - `source_and_target.ipynb`: Computing source and target distributions of the top 10 referenced sections.
         - `ranks.ipynb`: Plotting how ranks relate to a modeling and parameter choices.

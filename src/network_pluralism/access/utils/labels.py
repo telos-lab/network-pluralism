@@ -33,6 +33,11 @@ def get_well_written_section(item, language: str = "de"):
 
     return f"{row[f'written_{language}']} {row['law_name']}".strip()
 
+def get_statute_name_for_sem_id(item, language: str = "de"):
+    row = well_written_sections.loc[item]
+
+    return f"{row['law_name']}".strip()
+
 
 def get_well_written_sections(items, language: str = "de"):
     if items[0] in law_names_df.index:
@@ -55,6 +60,7 @@ def get_statute_name(sem_id):
     try:
         rows = law_names_df.loc[sem_id, "written"]
     except KeyError:
+        print('key error')
         return get_statute_name(sem_id.split("_")[0])
     if not isinstance(rows, str):
         return rows.loc[~rows.index.duplicated(keep="first")].iloc[0]
