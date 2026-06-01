@@ -30,8 +30,12 @@ load_look_up_tables()
 
 def get_well_written_section(item, language: str = "de"):
     row = well_written_sections.loc[item]
+   
 
-    return f"{row[f'written_{language}']} {row['law_name']}".strip()
+    text = f"{row[f'written_{language}']} {row['law_name']}".strip()
+    if not (text.startswith("§") or text.startswith("Section")):
+            text = f"Art. {text}" if language == "de" else f"Article {text}"
+    return text
 
 def get_statute_name_for_sem_id(item, language: str = "de"):
     row = well_written_sections.loc[item]
