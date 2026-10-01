@@ -69,5 +69,3 @@ if not COMPUTATION_PATH.exists():
         'Expected folder "2_network_data". Are you sure you have correctly set the DATA_PATH to be the actual data folder?'
     )
 
-EXPORT_FOLDER = Path("figures_and_results")
-EXPORT_FOLDER.mkdir(exist_ok=True)
