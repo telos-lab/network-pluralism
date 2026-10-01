@@ -1,9 +1,41 @@
 import os
-from pathlib import Path
+from pathlib import Path, PosixPath
 
 import dotenv
 
 dotenv.load_dotenv()
+
+import csv
+
+from datetime import datetime
+
+
+import builtins
+
+import csv
+
+from datetime import datetime
+
+_original_open = builtins.open
+
+
+def logged_open(file, *args, **kwargs):
+
+    mode = args[0] if args else kwargs.get("mode", "r")
+
+    with _original_open("/Users/pundert1/Documents/repos/network_pluralism/network_pluralism/path_usage.csv", "a", newline="") as log:
+        csv.writer(log).writerow(
+            [
+                datetime.now().isoformat(),
+                str(file),
+                mode,
+            ]
+        )
+
+    return _original_open(file, *args, **kwargs)
+
+
+builtins.open = logged_open
 
 
 BASE_PATH = Path(os.getenv("DATA_PATH", os.getcwd()))

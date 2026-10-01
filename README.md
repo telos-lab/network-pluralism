@@ -6,9 +6,9 @@ This is the replication package accompanying the following paper:
 > DOI: [10.48550/arXiv.2512.05679](https://doi.org/10.48550/arXiv.2512.05679)
 
 ## Setup: Data
-Download the preprocessed data as of the paper's latest download date from this [Donwload Link]() and place it into the `data`-folder as specific below.
+Download the *preprocessed* data as of the paper's latest download date from this [Data Repo]() and place it into the `data`-folder as specific below.
 
-All data should be stored in a `data`-folder. You can specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the location of this repository.
+All data should be stored in a `data`-folder. You can specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the root of this repository.
 
 ## Setup: Environment
 
@@ -21,11 +21,11 @@ uv sync
 Now, you should be able to run all our code.
 
 
-## Structure
+## Repo Structure
 
 This repository is structured as follows:
 
-- `notebooks`: Code for data analysis and plotting
+- `notebooks`: Code for data analysis and plotting.
   - `general`:
         - `depth.ipynb`: Describing *avaliable* depth in statutes and *exploited* depth within the observed references.
         - `base_network_description.ipynb`: Describing the size of the *base network* and its composition.
@@ -43,15 +43,12 @@ This repository is structured as follows:
         - `areas_of_law.ipynb`: Example of strongest neighbors observed in filtered subsets.
 - `figures_and_results`: Figures and results presented in the paper.
 - `scripts`: Scripts resembling the pipeline.
-- `src/network_pluralism`: The package underlying all other parts
-  - `./access`: Acessing the network data.
-  - `./download`: Downloading the orginal data.
-  - `./preprocessing`: Pre-Processing the raw data (optional and yet to do).
+- `src/network_pluralism`: The package underlying all other parts, mainly access to the network data + some helper functions.
 
 
 ## Figures and Tables
 
-All data-related figures and tables in the paper are generated using the notebooks contained in this repository. Consult the table below for specific presentations:
+All data-related figures and tables in the paper can be reproduced using the notebooks contained in this repository. Consult the table below for specific presentations:
 
 | File   |      Figures      |  Tables |
 |----------|:-------------:|------:|
