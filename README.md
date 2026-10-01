@@ -20,6 +20,16 @@ uv sync
 
 Now, you should be able to run all our code.
 
+## Running the code
+
+This reproducibility package builds on a set of Jupyter notebooks. You can either:
+
+1. Open *individual* notebooks, examine them, and execute cells in the way you're used to.
+2. Run *all* notebooks using the command below. Note: this will overwrite the notebooks files to populate cell outputs.
+
+```bash
+bash run_all_notebooks.sh
+```
 
 ## Repo Structure
 
