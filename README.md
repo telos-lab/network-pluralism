@@ -2,11 +2,11 @@
 
 This is the replication package accompanying the following paper:
 
-> Titus Pünder and Corinna Coupette. *The Power of Network Pluralism: Multi-Perspective Modeling of Heterogeneous Legal Document Networks* 
-> DOI: [10.48550/arXiv.2512.05679](https://doi.org/10.48550/arXiv.2512.05679)
+> Titus Pünder and Corinna Coupette. *The Power of Network Pluralism: Multi-Perspective Modeling of Heterogeneous Legal Document Networks*, Published in *The European Physical Journal B*, 2026
+> DOI: [10.1140/epjb/s10051-026-01178-3#citeas](https://doi.org/10.1140/epjb/s10051-026-01178-3)
 
 ## Setup: Data
-Download the *preprocessed* data as of the paper's latest download date from this [Data Repo]() and place it into the `data`-folder as specific below.
+Download the *preprocessed* data as of the paper's latest download date from this [Data Repository](https://doi.org/10.5281/zenodo.17780510) and place it into the `data`-folder as specified below.
 
 All data should be stored in a `data`-folder. You can specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the root of this repository.
 
@@ -31,6 +31,8 @@ This reproducibility package builds on a set of Jupyter notebooks. You can eithe
 bash run_all_notebooks.sh
 ```
 
+All figures and tables produced by the notebooks will be stored in the folder `figures_and_results`.
+
 ## Repo Structure
 
 This repository is structured as follows:
@@ -54,7 +56,6 @@ This repository is structured as follows:
 - `figures_and_results`: Figures and results presented in the paper.
 - `scripts`: Scripts resembling the pipeline.
 - `src/network_pluralism`: The package underlying all other parts, mainly access to the network data + some helper functions.
-
 
 ## Figures and Tables
 
