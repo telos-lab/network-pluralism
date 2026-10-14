@@ -11,11 +11,11 @@ If you have **downloaded this repo as a reproducibility package from Zenodo**, t
 
 If you **have cloned this repo from GitHub**, you have to download the accompanying dataset as specified in the following paragraph.
 
-Download the *preprocessed* data as of the paper's latest download date from this [Data Repository](https://doi.org/10.5281/zenodo.17780510) and place it in the `data`-folder. You can specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the root of this repository.
+Download the *preprocessed* data as of the paper's latest download date from this [Data Repository](https://doi.org/10.5281/zenodo.17780510) and place it in the `data`-folder. Then, specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the root of this repository.
 
 ## Setup: Environment
 
-We recommend installing the Python requirements into a virtual environment, e.g., using `uv` ([Install uv](https://docs.astral.sh/uv/getting-started/installation/))
+We recommend installing the Python requirements into a virtual environment, e.g., [using uv](https://docs.astral.sh/uv/getting-started/installation/).
 
 ```bash
 uv sync
@@ -51,7 +51,7 @@ This repository is structured as follows:
   - `case_study_2`: Results and figures of the second case study:
         - `reference_distributions.ipynb`: Showing and comparing the distributions of outgoing and incoming references across two levels of granularity.
         - `general_norms.ipynb`: Showing the overrepresentation of nodes in a coarse-grained network model.
-        - `decision_vs_paragraph.ipynb`: Plotting co-reference frequency at two different resolution levels.
+        - `decision_vs_paragraph.ipynb`: Plotting co-reference frequencies at two different resolution levels.
         - `source_granularity.ipynb`: Strongest neighbors observed for an example section at different levels of granularity.
         - `strength_threshold.ipynb`: Introducing thresholds and plotting their impact on ranks of strongest neighbors.
         - `reciprocity.ipynb`: Introducing reciprocity of pairwise relations and plotting bi-dimensional distributions (of incoming and outgoing strength).
@@ -83,4 +83,3 @@ All data-related figures and tables in the paper can be reproduced using the not
 
 **Code**: BSD 3-Clause License, (c) 2025, telos-lab - See: `LICENSE`.
 **Data**: CC BY-NC 4.0 - See: `DATALICENSE`.
-
