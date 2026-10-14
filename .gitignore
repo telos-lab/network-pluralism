@@ -219,7 +219,8 @@ __marimo__/
 
 network_pluralism_data/
 notesbooks_temp/
-figures_and_results/
+figures_and_results/*
+!figures_and_results/.gitkeep
 
 notes.md
 temp

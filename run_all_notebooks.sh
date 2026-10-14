@@ -1,7 +1,6 @@
 for notebook in notebooks/*/*.ipynb; do
-    jupyter nbconvert \
+    uv run jupyter nbconvert \
         --to notebook \
         --execute "$notebook" \
-        --inplace \
-        --allow-errors
+        --inplace
 done

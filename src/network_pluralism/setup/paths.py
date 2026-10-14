@@ -46,3 +46,4 @@ if not COMPUTATION_PATH.exists():
     raise InvalidDataFolder(
         'Expected folder "2_network_data". Are you sure you have correctly set the DATA_PATH to be the actual data folder?'
     )
+
