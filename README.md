@@ -6,9 +6,12 @@ This is the replication package accompanying the following paper:
 > DOI: [10.1140/epjb/s10051-026-01178-3#citeas](https://doi.org/10.1140/epjb/s10051-026-01178-3)
 
 ## Setup: Data
-Download the *preprocessed* data as of the paper's latest download date from this [Data Repository](https://doi.org/10.5281/zenodo.17780510) and place it into the `data`-folder as specified below.
 
-All data should be stored in a `data`-folder. You can specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the root of this repository.
+If you have **downloaded this repo as a reproducibility package from Zenodo**, the required data is already placed in the folder `network_pluralism_data`.
+
+If you **have cloned this repo from GitHub**, you have to download the accompanying data set as specified in the following paragraph.
+
+Download the *preprocessed* data as of the paper's latest download date from this [Data Repository](https://doi.org/10.5281/zenodo.17780510) and place it into the `data`-folder. You can specify its location by providing a `DATA_PATH` variable in your `.env` file. By default, a folder will be created at the root of this repository.
 
 ## Setup: Environment
 

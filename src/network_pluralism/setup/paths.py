@@ -17,7 +17,7 @@ class InvalidDataFolder(Exception):
 if not os.getenv("DATA_PATH"):
     raise DataPathError("Must provide a DATA_PATH, i.e., the path to the data folder.")
 
-DATA_PATH = Path(os.getenv("DATA_PATH"))
+DATA_PATH = Path(os.getenv("DATA_PATH"), "network_pluralism_data")
 
 if not DATA_PATH.exists():
     raise InvalidDataFolder(f"The DATA_PATH does not exists: {DATA_PATH}")
@@ -46,4 +46,3 @@ if not COMPUTATION_PATH.exists():
     raise InvalidDataFolder(
         'Expected folder "2_network_data". Are you sure you have correctly set the DATA_PATH to be the actual data folder?'
     )
-
