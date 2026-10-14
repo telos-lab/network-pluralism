@@ -217,7 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-network_pluralism_data/
+network_pluralism_data/*
+!network_pluralism_data/.gitkeep
 notesbooks_temp/
 figures_and_results/*
 !figures_and_results/.gitkeep
